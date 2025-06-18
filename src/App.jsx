@@ -19,9 +19,23 @@ import data from './data';
 
 
 function App() {
-  const [products, setProducts]= useState(data)
-  const today = products.filter(item=>item.cate==="today")
-  const bread = products.filter(item=>item.cate==="bread")
+  const [products, setProducts] = useState(data)
+  const today = products.filter(item => item.cate === "today")
+  const bread = products.filter(item => item.cate === "bread")
+  const cake = products.filter(item => item.cate === "cake")
+  const salad = products.filter(item => item.cate === "salad")
+  const gift = products.filter(item => item.cate === "gift")
+  const dessert = products.filter(item => item.cate === "dessert")
+  const cffe = products.filter(item => item.cate === "cffe")
+  const brrl = products.filter(item => item.cate === "brrl")
+
+  const bredl = products.filter(item => item.cate === "bredl")
+  const caikl = products.filter(item => item.cate === "caikl")
+  const sendwhicl = products.filter(item => item.cate === "sendwhicl")
+  const cffee = products.filter(item => item.cate === "cffee")
+  const degetl = products.filter(item => item.cate === "degetl")
+
+
 
   return (
     <div className="App">
@@ -40,7 +54,7 @@ function App() {
                 <NavDropdown.Item href="#action/3.3">케이크</NavDropdown.Item>
                 <NavDropdown.Item href="#action/3.4">샌드위치/샐러드</NavDropdown.Item>
                 <NavDropdown.Divider />
-                <NavDropdown.Item href="#action/3.5">선믈</NavDropdown.Item>
+                <NavDropdown.Item href="#action/3.5">선물</NavDropdown.Item>
                 <NavDropdown.Item href="#action/3.6">디저트/스낵</NavDropdown.Item>
                 <NavDropdown.Item href="#action/3.7">커피/음료</NavDropdown.Item>
                 <NavDropdown.Item href="#action/3.8">간편식</NavDropdown.Item>
@@ -79,13 +93,13 @@ function App() {
       <Container>
         <Row>
           {
-            today.map((item, i)=>
+            today.map((item, i) =>
               <Col sm={3}>
                 <img src={item.img} alt="" />
                 <p>{item.name}</p>
               </Col>
             )
-          }         
+          }
         </Row>
       </Container>
 
@@ -96,180 +110,152 @@ function App() {
       >
         <Tab eventKey="all" title="전체">
           <Container>
-            	 <Row>
+            <Row>
               <Col><h2>브레드</h2></Col>
             </Row>
             <Row>
-                        {
-            bread.map((item, i)=>
-              <Col sm={3}>
-                <img src={item.img} alt="" />
-                <p>{item.name}</p>
-              </Col>
-            )
-          }   
+              {
+                bread.map((item, i) =>
+                  <Col sm={4}>
+                    <img src={item.img} alt="" />
+                    <p>{item.name}</p>
+                  </Col>
+                )
+              }
             </Row>
-            <Row>
-              <br /><br /><br />
-            </Row>
+
             <Row>
               <Col><h2>케이크</h2></Col>
             </Row>
             <Row>
-              <Col sm={4}><img src="/img/별이빛나는밤에.jpg" alt="" />별이 빛나는 밤에</Col>
-              <Col sm={4}><img src="/img/딸기 블라썸 케이크.jpg" alt="" />딸기 블라썸 케이크</Col>
-              <Col sm={4}><img src="/img/마이넘버원3.png" alt="" />마이넘버원3</Col>
-            </Row>
-            <Row>
-              <Col sm={4}><img src="/img/고구마반생크림반케이크.jpg" alt="" />고구마반생크림반케이크</Col>
-              <Col sm={4}><img src="/img/초코반딸기반케이크.jpg" alt="" />초코반딸기반케이크</Col>
-              <Col sm={4}><img src="/img/블라썸 러브.png" alt="" />블라썸 러브</Col>
-            </Row>
-            <Row>
-              <br /><br /><br />
+              {
+                cake.map((item, i) =>
+                  <Col sm={4}>
+                    <img src={item.img} alt="" />
+                    <p>{item.name}</p>
+                  </Col>
+                )
+              }
             </Row>
 
             <Row>
               <Col><h2>샌드위치/샐러드</h2></Col>
             </Row>
             <Row>
-              <Col sm={4}><img src="/img/에그샐러드샌드위치.png" alt="" />에그샐러드샌드위치</Col>
-              <Col sm={4}><img src="/img/단백질-듬뿍-에그-샐러드.jpg" alt="" />단백질 듬뿍 에그 샐러드</Col>
-              <Col sm={4}><img src="/img/크리스피-치킨-샐러드.jpg" alt="" />크리스피 치킨 샐러드</Col>
-            </Row>
-            <Row>
-              <Col sm={4}><img src="/img/치킨디럭스샌드위치.png" alt="" />치킨디럭스 샌드위치</Col>
-              <Col sm={4}><img src="/img/런치-샌드위치.jpg" alt="" />런치 샌드위치</Col>
-              <Col sm={4}><img src="/img/미니버거-샌드위치.jpg" alt="" />미니버거 샌드위치</Col>
-            </Row>
-            <Row>
-              <br /><br /><br />
+              {
+                salad.map((item, i) =>
+                  <Col sm={4}>
+                    <img src={item.img} alt="" />
+                    <p>{item.name}</p>
+                  </Col>
+                )
+              }
             </Row>
 
             <Row>
               <Col><h2>선물</h2></Col>
             </Row>
             <Row>
-              <Col sm={4}><img src="/img/명가명품-우리벌꿀-카스테라.jpg" alt="" />명가명품 우리벌꿀 카스테라</Col>
-              <Col sm={4}><img src="/img/호두.jpg" alt="" />로스팅 호두 듬뿍 호두파이</Col>
-              <Col sm={4}><img src="/img/블루베리듬뿍-롤케익.jpg" alt="" />블루베리듬뿍 롤케익</Col>
-            </Row>
-            <Row>
-              <br /><br /><br />
+              {
+                gift.map((item, i) =>
+                  <Col sm={4}>
+                    <img src={item.img} alt="" />
+                    <p>{item.name}</p>
+                  </Col>
+                )
+              }
             </Row>
 
             <Row>
               <Col><h2>디저트/스낵</h2></Col>
             </Row>
             <Row>
-              <Col sm={4}><img src="/img/치즈가-부드러운-시간.png" alt="" />치즈가 부드러운 시간</Col>
-              <Col sm={4}><img src="/img/미스터베어.jpg" alt="" />미스터베어</Col>
-              <Col sm={4}><img src="/img/초코마카롱.png" alt="" />초코마카롱</Col>
-            </Row>
-            <Row>
-              <Col sm={4}><img src="/img/초콜릿머핀.jpg" alt="" />초콜릿 머핀</Col>
-              <Col sm={4}><img src="/img/오리지널머핀.jpg" alt="" />오리지널 머핀</Col>
-              <Col sm={4}><img src="/img/로스팅 호두로 더 고소한 조각호두파이.jpg" alt="" />로스팅 호두로 더 고소한 조각호두파이</Col>
-            </Row>
-            <Row>
-              <br /><br /><br />
+              {
+                dessert.map((item, i) =>
+                  <Col sm={4}>
+                    <img src={item.img} alt="" />
+                    <p>{item.name}</p>
+                  </Col>
+                )
+              }
             </Row>
             <Row>
               <Col><h2>커피/음료</h2></Col>
             </Row>
             <Row>
-              <Col sm={4}><img src="/img/(HOT)아메리카노.jpg" alt="" />(HOT) 아메리카노</Col>
-              <Col sm={4}><img src="/img/(ICE)아메리카노.jpg" alt="" />(ICE) 아메리카노</Col>
-              <Col sm={4}><img src="/img/치키제로티망고&캐모마일.jpg" alt="" />치키제로티 망고&캐모마일</Col>
-            </Row>
-            <Row>
-              <Col sm={4}><img src="/img/아침엔딸기우유200ml.jpg" alt="" />아침엔딸기우유 200㎖</Col>
-              <Col sm={4}><img src="/img/아침후레쉬우유-200㎖.jpg" alt="" />아침후레쉬우유 200㎖</Col>
-              <Col sm={4}><img src="/img/아침초코-우유-200㎖.jpg" alt="" />아침초코우유 200㎖</Col>
-            </Row>
-            <Row>
-              <br /><br /><br />
+              {
+                cffe.map((item, i) =>
+                  <Col sm={4}>
+                    <img src={item.img} alt="" />
+                    <p>{item.name}</p>
+                  </Col>
+                )
+              }
             </Row>
 
             <Row>
               <Col><h2>간편식</h2></Col>
             </Row>
             <Row>
-              <Col sm={4}><img src="/img/치즈듬뿍볼로네제파스타.jpg" alt="" />치즈듬뿍 볼로네제 파스타</Col>
-              <Col sm={4}><img src="/img/콘스프.jpg" alt="" />콘스프</Col>
-              <Col sm={4}><img src="/img/매콤핫투움바파스타.jpg" alt="" />매콤 핫 투움바 파스타</Col>
+              {
+                brrl.map((item, i) =>
+                  <Col sm={4}>
+                    <img src={item.img} alt="" />
+                    <p>{item.name}</p>
+                  </Col>
+                )
+              }
             </Row>
           </Container>
         </Tab>
-        <Tab eventKey="brad" title="브레드">
+        <Tab eventKey="bredl" title="브레드">
           <Container>
             <Row>
               <Col><h2>베스트 상품</h2></Col>
             </Row>
-            <Row>
-              <Col sm={3}><img src="/img/1발효버터소금빵.jpg" alt="" />발효버터소금빵</Col>
-              <Col sm={3}><img src="/img/2굿모닝롤.jpg" alt="" />굿모닝롤</Col>
-              <Col sm={3}><img src="/img/3롱롱소시지빵.jpg" alt="" />롱소시지빵</Col>
-              <Col sm={3}><img src="/img/1블랙올리브치즈베이글.jpg" alt="" />블랙올리브치즈 베이글</Col>
-            </Row>
-            <br /><hr />
-            <Row>
-              <Col sm={4}><img src="/img/인생크림빵애플망고.jpg" alt="" />인생크림빵 애플망고</Col>
-              <Col sm={4}><img src="/img/발효버터먹물소금빵.jpg" alt="" />발효버터 먹물소금빵</Col>
-              <Col sm={4}><img src="/img/딸기롤.jpg" alt="" />딸기롤</Col>
-            </Row>
-            <Row>
-              <Col sm={4}><img src="/img/파란라벨곡물롤.jpg" alt="" />[파란라벨]고단백 곡물롤</Col>
-              <Col sm={4}><img src="/img/파란라벨오트식빵.jpg" alt="" />[파란라벨]홀그레인 오트 식빵</Col>
-              <Col sm={4}><img src="/img/파란라벨로만밀식빵.jpg" alt="" />[파란라벨]단백질 로만밀 식빵</Col>
+       <Row>
+              {
+                bredl.map((item, i) =>
+                  <Col sm={4}>
+                    <img src={item.img} alt="" />
+                    <p>{item.name}</p>
+                  </Col>
+                )
+              }
             </Row>
           </Container>
         </Tab>
-        <Tab eventKey="caik" title="케이크">
+        <Tab eventKey="caikl" title="케이크">
           <Container>
             <Row>
               <Col><h2>베스트 상품</h2></Col>
             </Row>
-            <Row>
-              <Col sm={3}><img src="/img/별이빛나는밤에.jpg" alt="" />별이 빛나는 밤에</Col>
-              <Col sm={3}><img src="/img/딸기 블라썸 케이크.jpg" alt="" />딸기 블라썸 케이크(자몽/오렌지)</Col>
-              <Col sm={3}><img src="/img/마이넘버원3.png" alt="" />마이넘버원3</Col>
-              <Col sm={3}><img src="/img/블라썸 러브.png" alt="" />블라썸 러브</Col>
-            </Row>
-            <br /><hr />
-            <Row>
-              <Col sm={4}><img src="/img/토트넘슛골인케이크.jpg" alt="" />토트넘 슛-골인 케이크</Col>
-              <Col sm={4}><img src="/img/위시캣타워케이크.jpg" alt="" />매직 캣타워 케이크</Col>
-              <Col sm={4}><img src="/img/상어가족과파라다이스.jpg" alt="" />상어가족과 파라다이스</Col>
-            </Row>
-            <Row>
-              <Col sm={4}><img src="/img/아름다운시작.jpg" alt="" />아름다운 시작</Col>
-              <Col sm={4}><img src="/img/행복한시간.jpg" alt="" />행복한 시간</Col>
-              <Col sm={4}><img src="/img/영원한사랑.jpg" alt="" />영원한 사랑</Col>
+       <Row>
+              {
+                caikl.map((item, i) =>
+                  <Col sm={4}>
+                    <img src={item.img} alt="" />
+                    <p>{item.name}</p>
+                  </Col>
+                )
+              }
             </Row>
           </Container>
         </Tab>
-        <Tab eventKey="sendwhic" title="샌드위치/샐러드">
+        <Tab eventKey="sendwhicl" title="샌드위치/샐러드">
           <Container>
             <Row>
               <Col><h2>베스트 상품</h2></Col>
             </Row>
-            <Row>
-              <Col sm={3}><img src="/img/햄치즈 오리지널 머핀.jpg" alt="" />햄치즈 오리지널 머핀</Col>
-              <Col sm={3}><img src="/img/치킨커틀릿샐러드랩.png" alt="" />치킨커틀릿 샐러드랩</Col>
-              <Col sm={3}><img src="/img/에그샐러드샌드위치.png" alt="" />마이넘버원3</Col>
-              <Col sm={3}><img src="/img/단백질듬뿍에그샐러드.jpg" alt="" />단백질 듬뿍 치킨 에그샐러드</Col>
-            </Row>
-            <br /><hr />
-            <Row>
-              <Col sm={4}><img src="/img/파란라벨햄에그곡물롤.jpg" alt="" />[파란라벨]햄에그곡물롤</Col>
-              <Col sm={4}><img src="/img/야채샐러드롤파란라벨.jpg" alt="" />[파란라벨]야채샐러드롤</Col>
-              <Col sm={4}><img src="/img/미니버거샌드위치.jpg" alt="" />fresh한입쏙미니버거</Col>
-            </Row>
-            <Row>
-              <Col sm={4}><img src="/img/랜치그레인볼.jpg" alt="" />랜치 그레인 볼</Col>
-              <Col sm={4}><img src="/img/리코타프로틴볼.jpg" alt="" />리코타프로틴볼</Col>
-              <Col sm={4}><img src="/img/데리야끼치킨샐러드.jpg" alt="" />데리야끼 치킨 샐러드</Col>
+       <Row>
+              {
+                sendwhicl.map((item, i) =>
+                  <Col sm={4}>
+                    <img src={item.img} alt="" />
+                    <p>{item.name}</p>
+                  </Col>
+                )
+              }
             </Row>
           </Container>
         </Tab>
