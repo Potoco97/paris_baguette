@@ -7,7 +7,7 @@
     }
 }
 
-element.style{
+element.style {
     font-size: 15px;
 }
 
@@ -50,8 +50,12 @@ element.style{
 }
 
 .container:nth-of-type(1) {
-    font-size: 10px;
-    text-align: center;
+    font-size: 15px;
+    // text-align: center;
+
+    .dropdown-menu {
+        font-size: 15px;
+    }
 
     h2 {
         border-bottom: solid 1px #21006e;
@@ -81,43 +85,95 @@ element.style{
     }
 }
 
-.col-sm-3 {    
-    img{
-        transition: 1s;         
-    }    
-    img:hover{
+.col-sm-3 {
+    font-size: 20px;
+    border-bottom: solid 1px #dbdbdb;
+
+    img {
+        transition: 1s;
+        margin-bottom: 20px;
+    }
+
+    img:hover {
         cursor: pointer;
         transform: scale(110%);
         transition: 1s;
-        border:solid 1px none;
-        border-radius: 130px; 
+        border: solid 1px none;
+        border-radius: 130px;
     }
 }
 
-#uncontrolled-tab-example{
+#uncontrolled-tab-example {
     margin-top: 40px;
     font-size: 20px;
 }
 
-.col{
-        h2{
+.col {
+    h2 {
         margin-top: 40px;
     }
 }
 
-.col-sm-4{
-    p{
+.col-sm-4 {
+    p {
         margin-top: 15px;
         font-size: 20px;
     }
-        img{
-        transition: 1s;         
-    }    
-    img:hover{
+
+    img {
+        transition: 1s;
+    }
+
+    img:hover {
         cursor: pointer;
         transform: scale(110%);
         transition: 1s;
-        border:solid 1px none;
-        border-radius: 170px; 
+        border: solid 1px none;
+        border-radius: 170px;
     }
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+}
+
+.maintab {
+    width: 100%;
+    height: 400px;
+    margin: 0 auto;
+
+
+    .col-sm-4 {
+        width: 30%;
+        height: 180px;
+        margin-top: 30px;
+        border-right: #000 solid 1px;
+
+        
+        :nth-of-type(1) {
+            margin-left: 20px;
+            margin-right: 20px;
+            background-image: none;
+            
+        }
+    }
+
+
+    h3 {
+        width: 100%;
+        font-size: 15px;
+        font-weight: 400;
+        color: #003f92;
+    }
+
+    p {
+        width: 50%;
+        font-size: 18px;
+        font-weight: 600;
+    }
+    :hover {
+                cursor: pointer;
+            background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, .5));
+        }
 }

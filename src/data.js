@@ -284,28 +284,28 @@ const data = [
     },
     {
         id: 40,
-        cate: "bredl",
+        cate: "bred2",
         name: "발효버터소금빵",
         img: "/img/1발효버터소금빵.jpg",
         price: 2800
     },
     {
         id: 41,
-        cate: "bredl",
+        cate: "bred2",
         name: "굿모닝롤",
         img: "/img/2굿모닝롤.jpg",
         price: 2800
     },
     {
         id: 42,
-        cate: "bredl",
+        cate: "bred2",
         name: "롱소시지빵",
         img: "/img/3롱롱소시지빵.jpg",
         price: 3500
     },
     {
         id: 43,
-        cate: "bredl",
+        cate: "bred2",
         name: "블랙올리브치즈 베이글",
         img: "/img/1블랙올리브치즈베이글.jpg",
         price: 4700
@@ -354,26 +354,32 @@ const data = [
     },
     {
         id: 50,
-        cate: "caikl",
+        cate: "caik2",
         name: "별이 빛나는 밤에",
         img: "/img/별이빛나는밤에.jpg",
         price: 15000
     },
     {
         id: 51,
-        cate: "caikl",
+        cate: "caik2",
         name: "딸기 블라썸 케이크(자몽/오렌지)",
         img: "/img/딸기 블라썸 케이크.jpg",
         price: 22000
     },
     {
         id: 52,
-        cate: "caikl",
+        cate: "caik2",
         name: "마이넘버원3",
         img: "/img/마이넘버원3.png",
         price: 23000
     },
-
+        {
+        id: 53,
+        cate: "caik2",
+        name: "고구마반생크림반케이크",
+        img: "/img/고구마반생크림반케이크.jpg",
+        price: 23000
+    },
     {
         id: 54,
         cate: "caikl",
@@ -418,23 +424,30 @@ const data = [
     },
     {
         id: 60,
-        cate: "sendwhicl",
+        cate: "sendwhic2",
         name: "햄치즈 오리지널 머핀",
         img: "/img/햄치즈 오리지널 머핀.jpg",
         price: 2800
     },
     {
         id: 61,
-        cate: "sendwhicl",
+        cate: "sendwhic2",
         name: "치킨커틀릿 샐러드랩",
         img: "/img/치킨커틀릿샐러드랩.png",
         price: 4000
     },
     {
         id: 62,
-        cate: "sendwhicl",
+        cate: "sendwhic2",
         name: "에그샐러드 샌드위치",
         img: "/img/에그샐러드샌드위치.png",
+        price: 3800
+    },
+        {
+        id: 63,
+        cate: "sendwhic2",
+        name: "런치샌드위치",
+        img: "/img/런치샌드위치.jpg",
         price: 3800
     },
     {
@@ -481,14 +494,14 @@ const data = [
     },
     {
         id: 70,
-        cate: "cffee",
+        cate: "cffe2",
         name: "(HOT) 아메리카노",
         img: "/img/(HOT)아메리카노.jpg",
         price: 2000
     },
     {
         id: 71,
-        cate: "cffee",
+        cate: "cffe2",
         name: "(ICE) 아메리카",
         img: "/img/(ICE)아메리카노.jpg",
         price: 2000
@@ -496,14 +509,14 @@ const data = [
 
     {
         id: 72,
-        cate: "cffee",
+        cate: "cffe2",
         name: "카페라떼",
         img: "/img/카페라떼.JPG",
         price: 3500
     },
     {
         id: 73,
-        cate: "cffee",
+        cate: "cffe2",
         name: "아이스 카페라떼",
         img: "/img/아이스카페라떼.jpg",
         price: 3500
@@ -553,28 +566,28 @@ const data = [
     },
         {
         id: 80,
-        cate: "degetl",
+        cate: "deget2",
         name: "치즈가 부드러운 시간",
         img: "/img/치즈가부드러운시간.png",
         price: 5000
     },
         {
         id: 81,
-        cate: "degetl",
+        cate: "deget2",
         name: "초콜릿 머핀",
         img: "/img/초콜릿머핀.jpg",
         price: 2800
     },
         {
         id: 82,
-        cate: "degetl",
+        cate: "deget2",
         name: "미스베어",
         img: "/img/미스베어.JPG",
         price: 2500
     },
         {
         id: 83,
-        cate: "degetl",
+        cate: "deget2",
         name: "초코 마카롱",
         img: "/img/초코마카롱.png",
         price: 2500
@@ -621,7 +634,25 @@ const data = [
         img: "/img/슈크림슈.png",
         price: 2200
     },
-
+    //메인스테이지
+        {
+        id: 90,
+        cate: "maintab",
+        name: "고객센터",
+        serm: "고객의 소리를 적극 경청하고 고객만족 향상 활동을 지속적으로 실천합니다.",
+    },
+     {
+        id: 91,
+        cate: "maintab",
+        name: "고객센터",
+        serm: "고객의 소리를 적극 경청하고 고객만족 향상 활동을 지속적으로 실천합니다.",
+    },
+     {
+        id: 92,
+        cate: "maintab",
+        name: "고객센터",
+        serm: "고객의 소리를 적극 경청하고 고객만족 향상 활동을 지속적으로 실천합니다.",
+    },
 
 ]
 

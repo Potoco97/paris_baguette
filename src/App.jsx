@@ -30,11 +30,17 @@ function App() {
   const brrl = products.filter(item => item.cate === "brrl")
 
   const bredl = products.filter(item => item.cate === "bredl")
+  const bred2 = products.filter(item => item.cate === "bred2")
   const caikl = products.filter(item => item.cate === "caikl")
+  const caik2 = products.filter(item => item.cate === "caik2")
   const sendwhicl = products.filter(item => item.cate === "sendwhicl")
+  const sendwhic2 = products.filter(item => item.cate === "sendwhic2")
   const cffee = products.filter(item => item.cate === "cffee")
+  const cffe2 = products.filter(item => item.cate === "cffe2")
   const degetl = products.filter(item => item.cate === "degetl")
+  const deget2 = products.filter(item => item.cate === "deget2")
 
+  const maintab = products.filter(item => item.cate === "maintab")
 
 
   return (
@@ -213,7 +219,17 @@ function App() {
             <Row>
               <Col><h2>베스트 상품</h2></Col>
             </Row>
-       <Row>
+            <Row>
+              {
+                bred2.map((item, i) =>
+                  <Col sm={3}>
+                    <img src={item.img} alt="" />
+                    <p>{item.name}</p>
+                  </Col>
+                )
+              }
+            </Row>
+            <Row>
               {
                 bredl.map((item, i) =>
                   <Col sm={4}>
@@ -230,7 +246,17 @@ function App() {
             <Row>
               <Col><h2>베스트 상품</h2></Col>
             </Row>
-       <Row>
+            <Row>
+              {
+                caik2.map((item, i) =>
+                  <Col sm={3}>
+                    <img src={item.img} alt="" />
+                    <p>{item.name}</p>
+                  </Col>
+                )
+              }
+            </Row>
+            <Row>
               {
                 caikl.map((item, i) =>
                   <Col sm={4}>
@@ -247,7 +273,17 @@ function App() {
             <Row>
               <Col><h2>베스트 상품</h2></Col>
             </Row>
-       <Row>
+            <Row>
+              {
+                sendwhic2.map((item, i) =>
+                  <Col sm={3}>
+                    <img src={item.img} alt="" />
+                    <p>{item.name}</p>
+                  </Col>
+                )
+              }
+            </Row>
+            <Row>
               {
                 sendwhicl.map((item, i) =>
                   <Col sm={4}>
@@ -259,58 +295,79 @@ function App() {
             </Row>
           </Container>
         </Tab>
-        <Tab eventKey="cffe" title="커피/음료">
+        <Tab eventKey="cffee" title="커피/음료">
           <Container>
             <Row>
               <Col><h2>베스트 상품</h2></Col>
             </Row>
             <Row>
-              <Col sm={3}><img src="/img/(HOT)아메리카노.jpg" alt="" />(HOT) 아메리카노</Col>
-              <Col sm={3}><img src="/img/(ICE)아메리카노.jpg" alt="" />(ICE) 아메리카</Col>
-              <Col sm={3}><img src="/img/카페라떼.JPG" alt="" />카페라떼</Col>
-              <Col sm={3}><img src="/img/아이스카페라떼.jpg" alt="" />아이스 카페라떼</Col>
-            </Row>
-            <br /><hr />
-            <Row>
-              <Col sm={4}><img src="/img/카라멜팝콘빙수.PNG" alt="" />커피 카라멜 팝콘 빙수</Col>
-              <Col sm={4}><img src="/img/애플망고빙수.png" alt="" />POP 애플망고 빙수</Col>
-              <Col sm={4}><img src="/img/통단팥듬뿍우유팥빙수.jpg" alt="" />통단팥 듬뿍 우유 팥빙수</Col>
+              {
+                cffe2.map((item, i) =>
+                  <Col sm={3}>
+                    <img src={item.img} alt="" />
+                    <p>{item.name}</p>
+                  </Col>
+                )
+              }
             </Row>
             <Row>
-              <Col sm={4}><img src="/img/아이스녹차라떼.jpg" alt="" />아이스 제주녹차라떼</Col>
-              <Col sm={4}><img src="/img/아이스초코포레누아.jpg" alt="" />아이스 초코포레누아</Col>
-              <Col sm={4}><img src="/img/문경 오미자 에이드.jpg" alt="" />문경 오미자 에이드</Col>
+              {
+                cffee.map((item, i) =>
+                  <Col sm={4}>
+                    <img src={item.img} alt="" />
+                    <p>{item.name}</p>
+                  </Col>
+                )
+              }
             </Row>
           </Container>
         </Tab>
-        <Tab eventKey="deget" title="디저트/스낵">
+        <Tab eventKey="degetl" title="디저트/스낵">
           <Container>
             <Row>
               <Col><h2>베스트 상품</h2></Col>
             </Row>
             <Row>
-              <Col sm={3}><img src="/img/치즈가부드러운시간.png" alt="" />치즈가 부드러운 시간</Col>
-              <Col sm={3}><img src="/img/초콜릿머핀.jpg" alt="" />초콜릿 머핀</Col>
-              <Col sm={3}><img src="/img/미스베어.JPG" alt="" />미스베어</Col>
-              <Col sm={3}><img src="/img/초코마카롱.png" alt="" />초코 마카롱</Col>
-            </Row>
-            <br /><hr />
-            <Row>
-              <Col sm={4}><img src="/img/생딸기레어치즈타르트(1호).jpg" alt="" />생딸기 레어치즈 타르트(1호)</Col>
-              <Col sm={4}><img src="/img/토트넘유니폼쿠키.jpg" alt="" />토트넘 유니폼 쿠키</Col>
-              <Col sm={4}><img src="/img/딸기돌돌크레이프.jpg" alt="" />딸기돌돌크레이프</Col>
+              {
+                deget2.map((item, i) =>
+                  <Col sm={3}>
+                    <img src={item.img} alt="" />
+                    <p>{item.name}</p>
+                  </Col>
+                )
+              }
             </Row>
             <Row>
-              <Col sm={4}><img src="/img/무화과얼그레이스콘.jpg" alt="" />무화과 얼그레이 스콘</Col>
-              <Col sm={4}><img src="/img/스모어마시멜로우타르트.jpg" alt="" />스모어 마시멜로우 타르트</Col>
-              <Col sm={4}><img src="/img/슈크림슈.png" alt="" />바닐라빈 슈크림슈</Col>
+              {
+                degetl.map((item, i) =>
+                  <Col sm={4}>
+                    <img src={item.img} alt="" />
+                    <p>{item.name}</p>
+                  </Col>
+                )
+              }
             </Row>
           </Container>
         </Tab>
       </Tabs>
+      <div className="maintab">
+                    <Row>
+              {
+                maintab.map((item, i) =>
+                  <Col sm={4}>
+                    <h3>{item.name}</h3>
+                    <p>{item.serm}</p>
+                  </Col>
+                )
+              }
+            </Row>
+      </div>
     </div>
   );
 }
 
 
+
+
 export default App;
+
