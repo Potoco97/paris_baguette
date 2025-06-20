@@ -18,6 +18,8 @@ import data from './data';
 
 
 
+
+
 function App() {
   const [products, setProducts] = useState(data)
   const today = products.filter(item => item.cate === "today")
@@ -41,7 +43,7 @@ function App() {
   const deget2 = products.filter(item => item.cate === "deget2")
 
   const maintab = products.filter(item => item.cate === "maintab")
-
+  const footter = products.filter(item => item.cate === "footter")
 
   return (
     <div className="App">
@@ -350,22 +352,47 @@ function App() {
           </Container>
         </Tab>
       </Tabs>
+
+
       <div className="maintab">
-                    <Row>
-              {
-                maintab.map((item, i) =>
-                  <Col sm={4}>
-                    <h3>{item.name}</h3>
-                    <p>{item.serm}</p>
-                  </Col>
-                )
-              }
-            </Row>
+        <Row>
+          {
+            maintab.map((item, i) =>
+              <Col md={4}>
+                <h3>{item.name}</h3>
+                <p>{item.serm}</p>
+              </Col>
+            )
+          }
+        </Row>
       </div>
+
+      <Container className='footer'>
+        <Row className="justify-content-md-center">
+          <Col xs lg="2">
+            <h2>Info</h2>
+            <p>브랜드 소개<br />회사 소개<br />창업안내<br />거래희망사전등록<br />채용</p>
+          </Col>
+          <Col md="auto"></Col>
+          <Col xs lg="2">
+            <h2>Contact Us</h2>
+            <p>고객센터<br />080-***-****<br />평일 09:00 - 17:00(점심 12:00 - 13:00)<br />고객칭찬</p>
+          </Col>
+        </Row>
+        <Row className='justify-content-lg-center'>
+          <Col>
+          <img src="/img/footer-logo-img-01.png" alt="#" />
+          </Col>
+          <Col md="auto"></Col>
+          <Col xs lg="2">
+            <h2>Follow Us</h2>
+          </Col>
+        </Row>
+      </Container>
+
     </div>
   );
 }
-
 
 
 

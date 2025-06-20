@@ -373,7 +373,7 @@ const data = [
         img: "/img/마이넘버원3.png",
         price: 23000
     },
-        {
+    {
         id: 53,
         cate: "caik2",
         name: "고구마반생크림반케이크",
@@ -443,7 +443,7 @@ const data = [
         img: "/img/에그샐러드샌드위치.png",
         price: 3800
     },
-        {
+    {
         id: 63,
         cate: "sendwhic2",
         name: "런치샌드위치",
@@ -564,63 +564,63 @@ const data = [
         img: "/img/문경 오미자 에이드.jpg",
         price: 4600
     },
-        {
+    {
         id: 80,
         cate: "deget2",
         name: "치즈가 부드러운 시간",
         img: "/img/치즈가부드러운시간.png",
         price: 5000
     },
-        {
+    {
         id: 81,
         cate: "deget2",
         name: "초콜릿 머핀",
         img: "/img/초콜릿머핀.jpg",
         price: 2800
     },
-        {
+    {
         id: 82,
         cate: "deget2",
         name: "미스베어",
         img: "/img/미스베어.JPG",
         price: 2500
     },
-        {
+    {
         id: 83,
         cate: "deget2",
         name: "초코 마카롱",
         img: "/img/초코마카롱.png",
         price: 2500
     },
-        {
+    {
         id: 84,
         cate: "degetl",
         name: "생딸기 레어치즈 타르트(1호)",
         img: "/img/생딸기레어치즈타르트(1호).jpg",
         price: 7800
     },
-        {
+    {
         id: 85,
         cate: "degetl",
         name: "토트넘 유니폼 쿠키",
         img: "/img/토트넘유니폼쿠키.jpg",
         price: 2800
     },
-        {
+    {
         id: 86,
         cate: "degetl",
         name: "딸기돌돌크레이프",
         img: "/img/딸기돌돌크레이프.jpg",
         price: 8900
     },
-        {
+    {
         id: 87,
         cate: "degetl",
         name: "무화과 얼그레이 스콘",
         img: "/img/무화과얼그레이스콘.jpg",
         price: 7000
     },
-        {
+    {
         id: 88,
         cate: "degetl",
         name: "스모어 마시멜로우 타르트",
@@ -635,25 +635,51 @@ const data = [
         price: 2200
     },
     //메인스테이지
-        {
+    {
         id: 90,
         cate: "maintab",
         name: "고객센터",
         serm: "고객의 소리를 적극 경청하고 고객만족 향상 활동을 지속적으로 실천합니다.",
     },
-     {
+    {
         id: 91,
         cate: "maintab",
-        name: "고객센터",
-        serm: "고객의 소리를 적극 경청하고 고객만족 향상 활동을 지속적으로 실천합니다.",
+        name: "제휴 안내",
+        serm: "다양한 온라인 제휴와 카드 정보를 확인하세요.",
     },
-     {
+    {
         id: 92,
         cate: "maintab",
-        name: "고객센터",
-        serm: "고객의 소리를 적극 경청하고 고객만족 향상 활동을 지속적으로 실천합니다.",
+        name: "공지사항",
+        serm: "파리바게뜨 공지내용을 확인하세요",
     },
 
+    {
+        id: 93,
+        cate: "footter",
+        name: "Info",
+        serm: "",
+    },
+    {
+        id: 94,
+        cate: "footter",
+        name: "Contact Us",
+        serm: "",
+    },
+    {
+        id: 95,
+        cate: "footter",
+        name: "/img/footer-logo-img-01.png",
+        serm: "",
+    },
+    {
+        id: 96,
+        cate: "footter",
+        name: "Follow Us",
+        serm: "",
+    },
+    
 ]
+
 
 export default data;
