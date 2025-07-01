@@ -86,7 +86,7 @@ element.style {
 }
 
 .col-sm-3 {
-    font-size: 20px;
+    font-size: 100%;
     border-bottom: solid 1px #dbdbdb;
 
     img {
@@ -99,7 +99,7 @@ element.style {
         transform: scale(110%);
         transition: 1s;
         border: solid 1px none;
-        border-radius: 130px;
+        border-radius: 30px;
     }
 }
 
@@ -130,7 +130,7 @@ element.style {
         transform: scale(110%);
         transition: 1s;
         border: solid 1px none;
-        border-radius: 170px;
+        border-radius: 150px;
     }
 }
 

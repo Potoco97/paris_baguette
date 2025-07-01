@@ -1,0 +1,152 @@
+* {
+  text-decoration: none;
+}
+* a {
+  text-decoration: none;
+  color: #000;
+}
+
+element.style {
+  font-size: 15px;
+}
+
+.slider .swiper {
+  width: 100%;
+  height: 100%;
+}
+.slider .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #444;
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slider .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.container:nth-of-type(2) {
+  width: 100%;
+  height: 100%;
+  margin-top: 25px;
+}
+.container:nth-of-type(2) img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.container:nth-of-type(1) {
+  font-size: 15px;
+}
+.container:nth-of-type(1) .dropdown-menu {
+  font-size: 15px;
+}
+.container:nth-of-type(1) h2 {
+  border-bottom: solid 1px #21006e;
+  font-size: 20px;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  font-weight: 900;
+  color: #1800a3;
+}
+.container:nth-of-type(1) img {
+  width: 100%;
+  margin-top: 25px;
+}
+
+#uncontrolled-tab-example {
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 15px;
+  border: 0px;
+  font-weight: 900;
+}
+#uncontrolled-tab-example button {
+  border: 0px;
+}
+
+.col-sm-3 {
+  font-size: 100%;
+  border-bottom: solid 1px #dbdbdb;
+}
+.col-sm-3 img {
+  transition: 1s;
+  margin-bottom: 20px;
+}
+.col-sm-3 img:hover {
+  cursor: pointer;
+  transform: scale(110%);
+  transition: 1s;
+  border: solid 1px none;
+  border-radius: 30px;
+}
+
+#uncontrolled-tab-example {
+  margin-top: 40px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.col h2 {
+  margin-top: 40px;
+}
+
+.col-sm-4 p {
+  margin-top: 15px;
+  font-size: 20px;
+}
+.col-sm-4 img {
+  transition: 1s;
+}
+.col-sm-4 img:hover {
+  cursor: pointer;
+  transform: scale(110%);
+  transition: 1s;
+  border: solid 1px none;
+  border-radius: 150px;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.maintab {
+  width: 100%;
+  height: 250px;
+  margin: 0 auto;
+}
+.maintab .col-md-4 {
+  height: 180px;
+  margin-top: 30px;
+  border-right: #000 solid 1px;
+  margin-right: -20px;
+}
+.maintab .col-md-4 h3 {
+  width: 100%;
+  font-size: 15px;
+  font-weight: 400;
+  color: #003f92;
+}
+.maintab .col-md-4 p {
+  width: 50%;
+  font-size: 18px;
+  font-weight: 600;
+}
+.maintab .col-md-4 :nth-of-type(1) {
+  margin-left: 20px;
+  margin-right: 20px;
+  background-image: none;
+}
+
+.justify-content-lg-center {
+  font-weight: 900;
+}
