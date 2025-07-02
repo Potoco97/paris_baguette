@@ -78,9 +78,6 @@ function App() {
           </Col>
         </Row>
         <Row className='justify-content-lg-center'>
-          <Col>
-          <img src={process.env.PUBLIC_URL +"/img/footer-logo-img-01.png"} alt="#" />
-          </Col>
           <Col md="auto"></Col>
           <Col xs lg="2">
             <h2>Follow Us</h2>

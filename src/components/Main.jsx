@@ -1,5 +1,5 @@
 import React from 'react'
-import {Container,Row,Col,Tab,Tabs} from 'react-bootstrap';
+import { Container, Row, Col, Tab, Tabs } from 'react-bootstrap';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
@@ -9,9 +9,9 @@ import { useNavigate } from 'react-router-dom';
 
 
 const Main = (props) => {
-    const navigate=useNavigate()
-    const {products}=props
-      const today = products.filter(item => item.cate === "today")
+  const navigate = useNavigate()
+  const { products } = props
+  const today = products.filter(item => item.cate === "today")
   const bread = products.filter(item => item.cate === "bread")
   const cake = products.filter(item => item.cate === "cake")
   const salad = products.filter(item => item.cate === "salad")
@@ -35,24 +35,24 @@ const Main = (props) => {
   const footter = products.filter(item => item.cate === "footter")
   return (
     <>
-    <Swiper pagination={true} modules={[Pagination]} className="slider">
-        <SwiperSlide><img src={process.env.PUBLIC_URL +"/img/main_img1.png"} alt="#" /></SwiperSlide>
-        <SwiperSlide><img src={process.env.PUBLIC_URL +"/img/main_img2.png"} alt="#" /></SwiperSlide>
-        <SwiperSlide><img src={process.env.PUBLIC_URL +"/img/main_img3.png"} alt="#" /></SwiperSlide>
-        <SwiperSlide><img src={process.env.PUBLIC_URL +"/img/main_img4.png"} alt="#" /></SwiperSlide>
-        <SwiperSlide><img src={process.env.PUBLIC_URL +"/img/main_img5.png"} alt="#" /></SwiperSlide>
-        <SwiperSlide><img src={process.env.PUBLIC_URL +"/img/main_img6.png"} alt="#" /></SwiperSlide>
-        <SwiperSlide><img src={process.env.PUBLIC_URL +"/img/main_img7.png"} alt="#" /></SwiperSlide>
-        <SwiperSlide><img src={process.env.PUBLIC_URL +"/img/main_img8.png"} alt="#" /></SwiperSlide>
-        <SwiperSlide><img src={process.env.PUBLIC_URL +"/img/main_img9.png"} alt="#" /></SwiperSlide>
+      <Swiper pagination={true} modules={[Pagination]} className="slider">
+        <SwiperSlide><img src={process.env.PUBLIC_URL + "/img/main_img1.png"} alt="#" /></SwiperSlide>
+        <SwiperSlide><img src={process.env.PUBLIC_URL + "/img/main_img2.png"} alt="#" /></SwiperSlide>
+        <SwiperSlide><img src={process.env.PUBLIC_URL + "/img/main_img3.png"} alt="#" /></SwiperSlide>
+        <SwiperSlide><img src={process.env.PUBLIC_URL + "/img/main_img4.png"} alt="#" /></SwiperSlide>
+        <SwiperSlide><img src={process.env.PUBLIC_URL + "/img/main_img5.png"} alt="#" /></SwiperSlide>
+        <SwiperSlide><img src={process.env.PUBLIC_URL + "/img/main_img6.png"} alt="#" /></SwiperSlide>
+        <SwiperSlide><img src={process.env.PUBLIC_URL + "/img/main_img7.png"} alt="#" /></SwiperSlide>
+        <SwiperSlide><img src={process.env.PUBLIC_URL + "/img/main_img8.png"} alt="#" /></SwiperSlide>
+        <SwiperSlide><img src={process.env.PUBLIC_URL + "/img/main_img9.png"} alt="#" /></SwiperSlide>
       </Swiper>
 
       <Container>
         <Row>
           {
             today.map((item, i) =>
-              <Col sm={3} key={i} onClick={()=>{navigate('/detail/'+item.id)}}>
-                <img src={process.env.PUBLIC_URL +item.img} alt="" />
+              <Col sm={3} key={i} onClick={() => { navigate('/detail/' + item.id) }}>
+                <img src={process.env.PUBLIC_URL + item.img} alt="" />
                 <p>{item.name}</p>
               </Col>
             )
@@ -71,8 +71,8 @@ const Main = (props) => {
             <Row>
               {
                 bread.map((item, i) =>
-                  <Col sm={4} key={i} onClick={()=>{navigate('/detail/'+item.id)}}>
-                    <img src={process.env.PUBLIC_URL +item.img} alt="" />
+                  <Col sm={4} key={i} onClick={() => { navigate('/detail/' + item.id) }}>
+                    <img src={process.env.PUBLIC_URL + item.img} alt="" />
                     <p>{item.name}</p>
                   </Col>
                 )
@@ -83,8 +83,8 @@ const Main = (props) => {
             <Row>
               {
                 cake.map((item, i) =>
-                  <Col sm={4} key={i} onClick={()=>{navigate('/detail/'+item.id)}}>
-                    <img src={process.env.PUBLIC_URL +item.img} alt="" />
+                  <Col sm={4} key={i} onClick={() => { navigate('/detail/' + item.id) }}>
+                    <img src={process.env.PUBLIC_URL + item.img} alt="" />
                     <p>{item.name}</p>
                   </Col>
                 )
@@ -94,8 +94,8 @@ const Main = (props) => {
             <Row>
               {
                 salad.map((item, i) =>
-                  <Col sm={4} key={i} onClick={()=>{navigate('/detail/'+item.id)}}>
-                    <img src={process.env.PUBLIC_URL +item.img} alt="" />
+                  <Col sm={4} key={i} onClick={() => { navigate('/detail/' + item.id) }}>
+                    <img src={process.env.PUBLIC_URL + item.img} alt="" />
                     <p>{item.name}</p>
                   </Col>
                 )
@@ -105,8 +105,8 @@ const Main = (props) => {
             <Row>
               {
                 gift.map((item, i) =>
-                  <Col sm={4} key={i} onClick={()=>{navigate('/detail/'+item.id)}}>
-                    <img src={process.env.PUBLIC_URL +item.img} alt="" />
+                  <Col sm={4} key={i} onClick={() => { navigate('/detail/' + item.id) }}>
+                    <img src={process.env.PUBLIC_URL + item.img} alt="" />
                     <p>{item.name}</p>
                   </Col>
                 )
@@ -116,8 +116,8 @@ const Main = (props) => {
             <Row>
               {
                 dessert.map((item, i) =>
-                  <Col sm={4} key={i} onClick={()=>{navigate('/detail/'+item.id)}}>
-                    <img src={process.env.PUBLIC_URL +item.img} alt="" />
+                  <Col sm={4} key={i} onClick={() => { navigate('/detail/' + item.id) }}>
+                    <img src={process.env.PUBLIC_URL + item.img} alt="" />
                     <p>{item.name}</p>
                   </Col>
                 )
@@ -127,8 +127,8 @@ const Main = (props) => {
             <Row>
               {
                 cffe.map((item, i) =>
-                  <Col sm={4} key={i} onClick={()=>{navigate('/detail/'+item.id)}}>
-                    <img src={process.env.PUBLIC_URL +item.img} alt="" />
+                  <Col sm={4} key={i} onClick={() => { navigate('/detail/' + item.id) }}>
+                    <img src={process.env.PUBLIC_URL + item.img} alt="" />
                     <p>{item.name}</p>
                   </Col>
                 )
@@ -138,8 +138,8 @@ const Main = (props) => {
             <Row>
               {
                 brrl.map((item, i) =>
-                  <Col sm={4} key={i} onClick={()=>{navigate('/detail/'+item.id)}}>
-                    <img src={process.env.PUBLIC_URL +item.img} alt="" />
+                  <Col sm={4} key={i} onClick={() => { navigate('/detail/' + item.id) }}>
+                    <img src={process.env.PUBLIC_URL + item.img} alt="" />
                     <p>{item.name}</p>
                   </Col>
                 )
@@ -155,8 +155,8 @@ const Main = (props) => {
             <Row>
               {
                 bred2.map((item, i) =>
-                  <Col sm={3} key={i} onClick={()=>{navigate('/detail/'+item.id)}}>
-                    <img src={process.env.PUBLIC_URL +item.img} alt="" />
+                  <Col sm={3} key={i} onClick={() => { navigate('/detail/' + item.id) }}>
+                    <img src={process.env.PUBLIC_URL + item.img} alt="" />
                     <p>{item.name}</p>
                   </Col>
                 )
@@ -165,8 +165,8 @@ const Main = (props) => {
             <Row>
               {
                 bredl.map((item, i) =>
-                  <Col sm={4} key={i} onClick={()=>{navigate('/detail/'+item.id)}}>
-                    <img src={process.env.PUBLIC_URL +item.img} alt="" />
+                  <Col sm={4} key={i} onClick={() => { navigate('/detail/' + item.id) }}>
+                    <img src={process.env.PUBLIC_URL + item.img} alt="" />
                     <p>{item.name}</p>
                   </Col>
                 )
@@ -182,8 +182,8 @@ const Main = (props) => {
             <Row>
               {
                 caik2.map((item, i) =>
-                  <Col sm={3} key={i} onClick={()=>{navigate('/detail/'+item.id)}}>
-                    <img src={process.env.PUBLIC_URL +item.img} alt="" />
+                  <Col sm={3} key={i} onClick={() => { navigate('/detail/' + item.id) }}>
+                    <img src={process.env.PUBLIC_URL + item.img} alt="" />
                     <p>{item.name}</p>
                   </Col>
                 )
@@ -192,8 +192,8 @@ const Main = (props) => {
             <Row>
               {
                 caikl.map((item, i) =>
-                  <Col sm={4} key={i} onClick={()=>{navigate('/detail/'+item.id)}}>
-                    <img src={process.env.PUBLIC_URL +item.img} alt="" />
+                  <Col sm={4} key={i} onClick={() => { navigate('/detail/' + item.id) }}>
+                    <img src={process.env.PUBLIC_URL + item.img} alt="" />
                     <p>{item.name}</p>
                   </Col>
                 )
@@ -209,8 +209,8 @@ const Main = (props) => {
             <Row>
               {
                 sendwhic2.map((item, i) =>
-                  <Col sm={3} key={i} onClick={()=>{navigate('/detail/'+item.id)}}>
-                    <img src={process.env.PUBLIC_URL +item.img} alt="" />
+                  <Col sm={3} key={i} onClick={() => { navigate('/detail/' + item.id) }}>
+                    <img src={process.env.PUBLIC_URL + item.img} alt="" />
                     <p>{item.name}</p>
                   </Col>
                 )
@@ -219,8 +219,8 @@ const Main = (props) => {
             <Row>
               {
                 sendwhicl.map((item, i) =>
-                  <Col sm={4} key={i} onClick={()=>{navigate('/detail/'+item.id)}}>
-                    <img src={process.env.PUBLIC_URL +item.img} alt="" />
+                  <Col sm={4} key={i} onClick={() => { navigate('/detail/' + item.id) }}>
+                    <img src={process.env.PUBLIC_URL + item.img} alt="" />
                     <p>{item.name}</p>
                   </Col>
                 )
@@ -236,8 +236,8 @@ const Main = (props) => {
             <Row>
               {
                 cffe2.map((item, i) =>
-                  <Col sm={3} key={i} onClick={()=>{navigate('/detail/'+item.id)}}>
-                    <img src={process.env.PUBLIC_URL +item.img} alt="" />
+                  <Col sm={3} key={i} onClick={() => { navigate('/detail/' + item.id) }}>
+                    <img src={process.env.PUBLIC_URL + item.img} alt="" />
                     <p>{item.name}</p>
                   </Col>
                 )
@@ -246,8 +246,8 @@ const Main = (props) => {
             <Row>
               {
                 cffee.map((item, i) =>
-                  <Col sm={4} key={i} onClick={()=>{navigate('/detail/'+item.id)}}>
-                    <img src={process.env.PUBLIC_URL +item.img} alt="" />
+                  <Col sm={4} key={i} onClick={() => { navigate('/detail/' + item.id) }}>
+                    <img src={process.env.PUBLIC_URL + item.img} alt="" />
                     <p>{item.name}</p>
                   </Col>
                 )
@@ -263,8 +263,8 @@ const Main = (props) => {
             <Row>
               {
                 deget2.map((item, i) =>
-                  <Col sm={3} key={i} onClick={()=>{navigate('/detail/'+item.id)}}>
-                    <img src={process.env.PUBLIC_URL +item.img} alt="" />
+                  <Col sm={3} key={i} onClick={() => { navigate('/detail/' + item.id) }}>
+                    <img src={process.env.PUBLIC_URL + item.img} alt="" />
                     <p>{item.name}</p>
                   </Col>
                 )
@@ -273,8 +273,8 @@ const Main = (props) => {
             <Row>
               {
                 degetl.map((item, i) =>
-                  <Col sm={4} key={i} onClick={()=>{navigate('/detail/'+item.id)}}>
-                    <img src={process.env.PUBLIC_URL +item.img} alt="" />
+                  <Col sm={4} key={i} onClick={() => { navigate('/detail/' + item.id) }}>
+                    <img src={process.env.PUBLIC_URL + item.img} alt="" />
                     <p>{item.name}</p>
                   </Col>
                 )
