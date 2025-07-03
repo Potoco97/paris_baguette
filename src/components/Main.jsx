@@ -32,7 +32,7 @@ const Main = (props) => {
   const deget2 = products.filter(item => item.cate === "deget2")
 
   const maintab = products.filter(item => item.cate === "maintab")
-  const footter = products.filter(item => item.cate === "footter")
+  // const footer = products.filter(item => item.cate === "footer")
   return (
     <>
       <Swiper pagination={true} modules={[Pagination]} className="slider">

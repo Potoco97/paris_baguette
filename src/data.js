@@ -1016,29 +1016,16 @@ const data = [
 
     {
         id: 93,
-        cate: "footter",
+        cate: "footer",
         name: "Info",
         serm: "",
     },
     {
         id: 94,
-        cate: "footter",
+        cate: "footer",
         name: "Contact Us",
         serm: "",
-    },
-    {
-        id: 95,
-        cate: "footter",
-        name: "/img/footer-logo-img-01.png",
-        serm: "",
-    },
-    {
-        id: 96,
-        cate: "footter",
-        name: "Follow Us",
-        serm: "",
-    },
-    
+    },    
 ]
 
 

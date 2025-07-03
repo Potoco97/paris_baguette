@@ -14,7 +14,7 @@
     "react-dom": "^19.1.0",
     "react-redux": "^9.2.0",
     "react-router-dom": "^7.6.2",
-    "react-scripts": "5.0.1",
+    "react-scripts": "^5.0.1",
     "sass": "^1.89.2",
     "swiper": "^11.2.8",
     "web-vitals": "^2.1.4"
@@ -43,5 +43,5 @@
       "last 1 safari version"
     ]
   },
-  "homepage": " https://potoco97.github.io/baguette/"
+  "homepage": "https://potoco97.github.io/baguette/"
 }

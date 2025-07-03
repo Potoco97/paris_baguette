@@ -194,3 +194,23 @@ element.style {
         font-size: 30px;
     }
 }
+
+.cart {
+    .table {
+        td {
+            vertical-align: middle;
+
+            img {
+                margin: 0;
+                width: 100px;
+            }
+
+            span{
+                font-size: 16px;
+                display: inline;
+                font-weight: normal;
+            }
+        }
+    }
+
+}

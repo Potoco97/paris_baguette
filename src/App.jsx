@@ -12,11 +12,12 @@ import data from './data';
 import { Route, Routes, useNavigate } from 'react-router-dom';
 import Main from './components/Main';
 import Detail from './components/Detail';
+import Cart from './components/Cart';
 
 
 function App() {
   const navigate=useNavigate()
-  const [products, setProducts] = useState(data)
+  const [products] = useState(data)
 
 
   return (
@@ -61,6 +62,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Main products={products}/>}></Route>
         <Route path="/detail/:id" element={<Detail products={products}/>} />
+        <Route path="/cart" element={<Cart></Cart>}></Route>
       </Routes>
 
 

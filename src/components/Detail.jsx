@@ -1,7 +1,11 @@
 import { Button, Col, Container, Row } from "react-bootstrap";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
+import { addItem } from "./../store.js";
+import { useDispatch } from "react-redux";
 
   const Detail = (props) => {
+    const dispatch=useDispatch()
+    const navigate=useNavigate()
     const {id}=useParams()
     const { products } = props;
 
@@ -13,15 +17,19 @@ import { useParams } from "react-router-dom";
         <Container className="detail">
             <Row>
                 <Col md={6}>
-                    <img src={process.env.PUBLIC_URL+products[id].img} width="100%" />
+                    <img src={process.env.PUBLIC_URL+products[id].img} alt="상품이미지" width="100%" />
                 </Col>
 
                 <Col md={6}>
                     <h4 className="pt-5">{products[id].name}</h4>
                     <p className="text-center">{products[id].contens}</p>
                     <p className="text-center price">{products[id].price.toLocaleString()}원</p>
-
-                    <Button variant="danger">주문하기</Button>
+                    <Button className="btn btn-danger" onClick={() => {
+                        dispatch(addItem({ id: products[id].id, img:products[id].img, item: products[id].name, price:products[id].price, amount: 1 }));
+                        if (window.confirm('장바구니로 이동하시겠습니까?')) {
+                            navigate('/cart');
+                        }
+                    }}>주문하기</Button>
                     <h5>영양정보</h5>
                     <p>{products[id].info1}</p>
                     <p>{products[id].info2}</p>
