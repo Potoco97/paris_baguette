@@ -139,6 +139,11 @@ element.style {
     display: flex;
     justify-content: center;
     margin: 0 auto;
+    button{
+        width: 100%;
+        background-color: #003f92;
+        border: #003f92;
+    }
 }
 
 .maintab {
@@ -180,17 +185,19 @@ element.style {
     font-weight: 900;
 }
 
-.detail{
-    h5{
+.detail {
+    h5 {
         text-align: left;
         border-bottom: 1px solid #444;
         padding-top: 20px;
         padding-bottom: 5px;
     }
-    p{
+
+    p {
         text-align: left;
     }
-    .price{
+
+    .price {
         font-size: 30px;
     }
 }
@@ -205,7 +212,7 @@ element.style {
                 width: 100px;
             }
 
-            span{
+            span {
                 font-size: 16px;
                 display: inline;
                 font-weight: normal;
@@ -213,4 +220,27 @@ element.style {
         }
     }
 
+}
+
+.table {
+    tbody {
+          tr{
+            td{
+                button{
+                    width: 30px;
+                    height: 30px;
+                    color: #003f92;
+                    font-size: 25px;
+                    background:none;
+                    border: solid 0px ;
+                    border-radius: 50%;
+                }
+            }
+          }  
+        }
+    }
+.container{
+    .navbar-brand{
+        cursor: pointer;
+    }
 }
